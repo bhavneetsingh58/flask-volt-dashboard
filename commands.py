@@ -1,7 +1,7 @@
 import click
 from flask.cli import with_appcontext
-from .extensions import db
-from .models import User ,Question
+from apps import db
+from apps.authentication.models import user_loader ,request_loader
 
 @click.command(name='create_tables')
 @with_appcontext
