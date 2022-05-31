@@ -1,8 +1,4 @@
 # -*- encoding: utf-8 -*-
-"""
-Copyright (c) 2019 - present AppSeed.us
-"""
-
 import os
 from decouple import config
 
@@ -15,7 +11,8 @@ class Config(object):
     #config('SECRET_KEY', default='S#perS3crEt_007')
 
     # This will create a file in <app> FOLDER
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    SQLALCHEMY_DATABASE_URI = 'postgres://telvbmwrgwijop:2e6036ca671248149b1dcd323ae137607e1eeeac0e6c96f87f5e454bbdc580b4@ec2-34-231-177-125.compute-1.amazonaws.com:5432/dnhk1j6sn8ik8'
+    #os.environ.get('DATABASE_URL')
     #'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
